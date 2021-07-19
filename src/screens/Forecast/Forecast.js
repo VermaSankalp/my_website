@@ -89,7 +89,7 @@ const Forecast = (props) => {
         }).catch((error) => {
             console.error(error);
         });
-    }, [])
+    }, [options])
 
     return (
         <Table striped bordered hover variant="dark">
@@ -167,7 +167,7 @@ const Forecast = (props) => {
                             <td>
                                 {value}
                                 <br/>
-                                <a href={`https://www.latlong.net/c/?lat=${value[0]}&long=${value[1]}`} target="_blank">
+                                <a href={`https://www.latlong.net/c/?lat=${value[0]}&long=${value[1]}`} target="_blank" rel="noreferrer">
                                     click to check this location on a map
                                 </a>
                             </td>

@@ -54,7 +54,7 @@ const Landing = () => {
                 </p>
             }
             {showScrollToTop && 
-                <img src={ScrollUp} className="scrollUp" onClick={scrollToTop} onMouseEnter={() => setShowHoverText(true)} onMouseLeave={() => setShowHoverText(false)}/> 
+                <img src={ScrollUp} className="scrollUp" onClick={scrollToTop} onMouseEnter={() => setShowHoverText(true)} onMouseLeave={() => setShowHoverText(false)} alt="button to scroll to the top"/> 
             }
             <DropdownCard showText={false} title="what is this website." text={["i made this website to not only show my (very limited) web developement skills but also as a place where i can document my life and it just so happens that everyone can also view it along with me"]} />
             <DropdownCard showText={false} title="my plans for this." text={["my plan is to regularly update this website with new features that i want to experiment with, but as a student that might be a hard thing to achieve so a semi-regular update schedule is what i hope to follow"]}/>
