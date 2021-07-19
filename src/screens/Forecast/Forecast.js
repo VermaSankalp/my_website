@@ -30,7 +30,7 @@ const Forecast = (props) => {
     const [coord, setCoord] = useState([]);
     const [country, setCountry] = useState([]);
 
-    useEffect( () => {
+    useEffect(() => {
         var options = {
             method: 'GET',
             url: 'https://community-open-weather-map.p.rapidapi.com/find',
@@ -48,7 +48,7 @@ const Forecast = (props) => {
               'x-rapidapi-host': 'community-open-weather-map.p.rapidapi.com'
             }
         };
-        
+    
     axios.request(options).then(
         (response) => {
             console.log(response.data.list);
@@ -89,7 +89,7 @@ const Forecast = (props) => {
         }).catch((error) => {
             console.error(error);
         });
-    }, [options])
+    }, [props.city])
 
     return (
         <Table striped bordered hover variant="dark">
