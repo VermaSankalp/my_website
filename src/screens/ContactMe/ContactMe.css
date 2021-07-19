@@ -1,0 +1,16 @@
+.contactMainDiv {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/925743/pexels-photo-925743.jpeg?cs=srgb&dl=pexels-jo%C3%A3o-jesus-925743.jpg&fm=jpg');
+    background-size: 36% 100%;
+    background-position: center;
+    text-align: center;
+}
+
+.contactMainDiv div {
+    margin: 0 auto 0 auto;
+}
+
+.contactMainDiv h4 {
+    padding: 50px 0px 50px 0px;
+}

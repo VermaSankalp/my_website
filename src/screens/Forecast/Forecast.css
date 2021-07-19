@@ -1,0 +1,20 @@
+.forecastDiv {
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(192,192,192,0.33);
+}
+
+.forecastDiv h1 {
+    padding: 15px 0px 0px 0px;
+}
+.forecastDiv h4 {
+    padding: 15px 0px 0px 0px;
+}
+.forecastDiv h6 {
+    padding: 15px 0px 15px 0px;
+}
+
+.forecastbutton {
+    margin: 0px 0px 5px 20px;
+}

@@ -1,0 +1,59 @@
+.mainAboutDiv {
+    height: 140vh;
+    width: 100%;
+    background-color: rgba(192,192,192,0.33);
+}
+
+.leftDiv {
+    width: 50%;
+    height: 100%;
+    background-image: url('https://images.pexels.com/photos/925743/pexels-photo-925743.jpeg?cs=srgb&dl=pexels-jo%C3%A3o-jesus-925743.jpg&fm=jpg');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    text-align: center;
+}
+
+.rightDiv {
+    width: 50%; 
+    float: right;
+    /* height: 100%; */
+    text-align: center;
+    /* background-color: snow; */
+}
+
+.rightDiv p {
+    padding: 40px;
+}
+
+.rightDiv h2 {
+    margin-top: 30px;
+}
+
+.leftDiv h3 {
+    margin-top: 250px;
+}
+
+@media screen and (max-width: 540px ) {
+    .mainAboutDiv {
+        height: 220vh;
+        width: 100%;
+        background-color: rgba(192,192,192,0.33);
+    }
+
+    .rightDiv{
+        width: 100%;
+    }
+
+    .leftDiv {
+        display: none;
+    }
+}
+
+/* .myImage {
+    display: inline-block;
+    width: 200px;
+    position: relative;
+    left: 70px;
+    top: 40px;
+} */

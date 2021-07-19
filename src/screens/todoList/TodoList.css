@@ -1,0 +1,15 @@
+.mainTodoDiv {
+    height: 150vh;
+    width: 100%;
+    background-color: rgba(192,192,192,0.33);
+    padding: 50px;
+}
+
+.mainTodoDiv h6 {
+    padding: 15px 0px 10px 0px;
+}
+
+.input {
+    width: 80%;
+    height: 50px;
+}
