@@ -30,25 +30,25 @@ const Forecast = (props) => {
     const [coord, setCoord] = useState([]);
     const [country, setCountry] = useState([]);
 
-    var options = {
-        method: 'GET',
-        url: 'https://community-open-weather-map.p.rapidapi.com/find',
-        params: {
-          q: props.city,
-          cnt: '20',
-          mode: 'null',
-          lon: '0',
-          type: 'link, accurate',
-          lat: '0',
-          units: 'imperial, metric'
-        },
-        headers: {
-          'x-rapidapi-key': '0f11817b07msh207729bc91826edp18e3adjsn26514cca5b43',
-          'x-rapidapi-host': 'community-open-weather-map.p.rapidapi.com'
-        }
-    };
-
     useEffect( () => {
+        var options = {
+            method: 'GET',
+            url: 'https://community-open-weather-map.p.rapidapi.com/find',
+            params: {
+              q: props.city,
+              cnt: '20',
+              mode: 'null',
+              lon: '0',
+              type: 'link, accurate',
+              lat: '0',
+              units: 'imperial, metric'
+            },
+            headers: {
+              'x-rapidapi-key': '0f11817b07msh207729bc91826edp18e3adjsn26514cca5b43',
+              'x-rapidapi-host': 'community-open-weather-map.p.rapidapi.com'
+            }
+        };
+        
     axios.request(options).then(
         (response) => {
             console.log(response.data.list);
