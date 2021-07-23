@@ -11,7 +11,6 @@ import TodoList from '../../screens/todoList/TodoList';
 import Landing from '../../screens/Landing/Landing';
 import ContactMe from '../../screens/ContactMe/ContactMe';
 import ForecastDisplay from '../../screens/Forecast/ForecastDisplay';
-import EnergyGame from '../../screens/EnergyGameThing/EnergyGame';
 
 const MyNavbar = () => {
     return (
