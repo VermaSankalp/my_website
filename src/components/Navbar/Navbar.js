@@ -11,6 +11,7 @@ import TodoList from '../../screens/todoList/TodoList';
 import Landing from '../../screens/Landing/Landing';
 import ContactMe from '../../screens/ContactMe/ContactMe';
 import ForecastDisplay from '../../screens/Forecast/ForecastDisplay';
+import EnergyGame from '../../screens/EnergyGameThing/EnergyGame';
 
 const MyNavbar = () => {
     return (
@@ -23,14 +24,14 @@ const MyNavbar = () => {
                             <Nav.Link> <Link to="/about">about me</Link> </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
+                            <Nav.Link> <Link to="/contact">contact me</Link> </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
                             <NavDropdown title="my-projects">
                                 <NavDropdown.Item> <Link to="/todo">todo-list</Link> </NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item> <Link to="/forecast">search-weather</Link> </NavDropdown.Item>
+                                <NavDropdown.Item> <Link to="/forecast">weather-forecast</Link> </NavDropdown.Item>
                             </NavDropdown>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link> <Link to="/contact">contact me</Link> </Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>

@@ -32,6 +32,7 @@ const TodoList = () => {
   }
   const removeItem = (item) => {
     dispatch(removeTodo(item));
+    setHoverIndex(100000);
   }
   const handleFilter = (event) => {
     const input = event.target.value;
@@ -56,17 +57,17 @@ const TodoList = () => {
         <input value={filterInput} onChange={handleFilter} style={{marginBottom: 20}}/>
       </div>
       {!filter && <ul style={{listStyleType: 'none'}}>
-        {todoList.map((item, index) => <li style={{marginBottom: 10}}><button style={styles.listButton} onClick={() => removeItem(item)}>
-          <div onMouseEnter={() => handleHover(index)} onMouseLeave={() => handleHover(100000)}>
-            {hoverIndex !== index && item}
+        {todoList.map((item, index) => <li onMouseEnter={() => handleHover(index)} onMouseLeave={() => handleHover(100000)}><button style={styles.listButton} onClick={() => removeItem(item)}>
+          <div>
+            {hoverIndex !== index && <p style={{fontSize: 20}}>{item}</p>}
             {hoverIndex === index && <p style={{color: '#DB4D6D'}}>Click to delete</p>}
           </div>
         </button></li>)}
       </ul>}
       {filter && <ul style={{listStyleType: 'none'}}>
-        {filteredTodoList.map((item, index) => <li><button style={styles.listButton} onClick={() => removeItem(item)}>
-          <div onMouseEnter={() => handleHover(index)} onMouseLeave={() => handleHover(100000)}>
-            {hoverIndex !== index && item}
+        {filteredTodoList.map((item, index) => <li onMouseEnter={() => handleHover(index)} onMouseLeave={() => handleHover(100000)}><button style={styles.listButton} onClick={() => removeItem(item)}>
+          <div>
+            {hoverIndex !== index && <p style={{fontSize: 20}}>{item}</p>}
             {hoverIndex === index && <p style={{color: '#DB4D6D'}}>Click to delete</p>}
           </div>
         </button></li>)}

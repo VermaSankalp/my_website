@@ -51,8 +51,6 @@ const Forecast = (props) => {
     
     axios.request(options).then(
         (response) => {
-            console.log(response.data.list);
-
             if (!response && !(response.data)) console.error('Invalid response');
 
             const count = response.data.count;
@@ -74,14 +72,12 @@ const Forecast = (props) => {
 
             for (let i = 0, tempArr = [], tempMinArr = [], tempMaxArr = [], tempFeelLikeArr = [], humidityArr = [], weatherArr = [], dtArr = [], coordArr = [], countryArr = []; i < count; ++i) {
                 if (count === 0) break;
-                console.log(data[i].dt);
 
                 tempArr[i] = data[i].kelvin_temp; tempMinArr[i] = data[i].kelvin_temp_min; tempMaxArr[i] = data[i].kelvin_temp_max;
                 tempFeelLikeArr[i] = data[i].kelvin_feels_like; humidityArr[i] = data[i].humidity; weatherArr[i] = data[i].weather;
                 dtArr[i] = convertDt(data[i].dt); coordArr[i] = data[i].coordinates; countryArr[i] = data[i].country;
 
                 if (i === (count - 1)) {
-                    console.log(tempArr);
                     setTemp(tempArr); setTempMin(tempMinArr); setTempMax(tempMaxArr); setTempFeelLike(tempFeelLikeArr); setHumidity(humidityArr); setWeather(weatherArr);
                     setDt(dtArr); setCoord(coordArr); setCountry(countryArr);
                 }

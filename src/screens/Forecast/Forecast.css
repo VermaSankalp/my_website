@@ -1,20 +1,94 @@
-.forecastDiv {
-    text-align: center;
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(192,192,192,0.33);
-}
+    .selectForecastTitle {
+        position: fixed;
+        width: 100vw;
+        text-align: center;
+    }
 
-.forecastDiv h1 {
-    padding: 15px 0px 0px 0px;
-}
-.forecastDiv h4 {
-    padding: 15px 0px 0px 0px;
-}
-.forecastDiv h6 {
-    padding: 15px 0px 15px 0px;
-}
+    .forecastDiv {
+        text-align: center;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(192,192,192,0.33);
+    }
+    
+    .oneDayDiv {
+        width: 50%;
+        height: 92vh;
+        background-color: cornflowerblue;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .oneDayDiv h3 {
+        margin-top: 40%;
+    }
+    
+    .fiveDayDiv h3 {
+        margin-top: 40%;
+    }
+    
+    .fiveDayDiv {
+        width: 50%;
+        height: 92vh;
+        float: right;
+        background-color: darkseagreen;
+        text-align: center;
+    }
+    
+    .forecastDiv h1 {
+        padding: 15px 0px 0px 0px;
+    }
+    .forecastDiv h4 {
+        padding: 15px 0px 0px 0px;
+    }
+    .forecastDiv h6 {
+        padding: 15px 0px 0px 0px;
+    }
+    
+    .forecastbutton {
+        margin: 0px 0px 5px 20px;
+    }
+    
+    .goBackForecastButton {
+        position: relative;
+        float: left;
+        right: -5vw;
+        top: 4vh;
+    }
 
-.forecastbutton {
-    margin: 0px 0px 5px 20px;
+    .selectCountry {
+        margin-left: 10px;
+    }
+
+    .oneDayData {
+        overflow: scroll;
+    }
+
+@media all and (min-width: 100px) and (max-width: 700px) {
+    .forecastDiv {
+        text-align: center;
+        height: 120vh;
+        width: 100%;
+        background-color: rgba(192,192,192,0.33);
+    }
+    
+    .oneDayDiv h3 {
+        margin-top: 80%;
+    }
+    
+    .fiveDayDiv h3 {
+        margin-top: 80%;
+    }
+
+    .goBackForecastButton {
+        position: fixed;
+        float: right;
+        right: 35vw;
+        top: 90vh;
+    }
+
+    .selectCountry {
+        margin-left: 0;
+        width: 100vw;
+    }
 }

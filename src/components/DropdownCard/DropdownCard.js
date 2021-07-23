@@ -13,14 +13,14 @@ const DropdownCard = (props) => {
         <div>
             {!showText && 
                 <>
-                    <h2 style={{display: 'inline-block', width: '60%'}}>{props.title}</h2>
-                    <img src={ImageDown} className="downArrow" alt='down arrow' onClick={changeIcon} style={{width: 40, height: 40, position: 'relative', bottom: 7, right: 20}}/>
+                    <h2>{props.title}</h2>
+                    <img src={ImageUp} className="downArrow" alt='down arrow' onClick={changeIcon} style={{width: 40, height: 40}}/>
                 </>
             }
             {showText && 
                 <div style={{textAlign: 'center'}}>
-                    <h2 style={{display: 'inline-block', width: '60%'}}>{props.title}</h2>
-                    <img src={ImageUp} alt='up arrow' onClick={changeIcon} style={{width: 40, height: 40, position: 'relative', bottom: 7, right: 20}}/>
+                    <h2>{props.title}</h2>
+                    <img src={ImageDown} alt='up arrow' onClick={changeIcon} style={{width: 40, height: 40}}/>
                     <ul style={{listStyleType: 'none'}}>
                         <div style={{borderBottom: '2px solid black', marginRight: 30}}> 
                             <p style={{padding: 40}}>

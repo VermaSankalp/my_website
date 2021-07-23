@@ -59,7 +59,7 @@ const Landing = () => {
             <DropdownCard showText={false} title="what is this website." text={["i made this website to not only show my (very limited) web developement skills but also as a place where i can document my life and it just so happens that everyone can also view it along with me"]} />
             <DropdownCard showText={false} title="my plans for this." text={["my plan is to regularly update this website with new features that i want to experiment with, but as a student that might be a hard thing to achieve so a semi-regular update schedule is what i hope to follow"]}/>
             <DropdownCard showText={false} title="the tech i used." text={["for those that are interested, this site is built entirely on the frontend using react-js and a few of its specialised libraries like react redux, react bootstrap and react router to name a few"]} />
-            <DropdownCard showText={false} title="upcoming projects for the page" text={["a 3-day weather forecast app using the same api as the 'search-weather' app for the 'my-projects' tab", "ui update to the mobile version of the 'about me' page, as the desktop/ipad version of that page has a little more to it", "adding a new blog page, where i can post the plans i have for this website and any other projects i have"]}/>
+            <DropdownCard showText={false} title="upcoming projects for the page" text={["currently testing a simple keyboard based game for the 'my-projects' section", "ui update to the mobile version of the 'about me' page, as the desktop/ipad version of that page has a little more to it", "adding a new blog page, where i can post the plans i have for this website and any other projects i have"]}/>
         </div>
     )
 }

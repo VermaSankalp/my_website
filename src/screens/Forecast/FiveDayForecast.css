@@ -1,0 +1,7 @@
+.fiveDayForecastPageDiv div {
+    margin: 0 auto 0 auto;
+}
+
+.fiveDayForecastPageInvalid {
+    text-align: center;
+}
