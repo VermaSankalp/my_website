@@ -1,6 +1,6 @@
 import React , {useState} from 'react';
-import ImageDown from '../../assets/downIcon.png';
-import ImageUp from '../../assets/upIcon.png';
+import ImageDown from '../../assets/Icons/downIcon.png';
+import ImageUp from '../../assets/Icons/upIcon.png';
 
 //width: 600 in the <h2> tag is causing responsive page issues 
 

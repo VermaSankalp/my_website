@@ -1,0 +1,149 @@
+
+.energyGameMainDiv {
+    width: 100%;
+    height: 100%;
+}
+
+.energyGameClickableDiv {
+    text-align: center;
+    background: rgb(15,14,15);
+    background: linear-gradient(90deg, rgba(15,14,15,1) 0%, rgba(222,180,121,1) 50%, rgba(15,14,15,1) 100%);
+    width: 100vw;
+    height: 95vh;
+    padding-top: 5%;
+    padding-bottom: 50%;
+}
+
+.energyGameHoverBox {
+    background: rgb(15,14,15);
+    background: linear-gradient(90deg, rgba(15,14,15,1) 0%, rgba(222,180,121,1) 50%, rgba(15,14,15,1) 100%);
+    border-top: 1px solid black;
+    box-shadow: 0px 4px 30px black;
+}
+
+.energyGameUpgradeDiv {
+    width: 100%;
+    position: relative;
+    /* display: flex;
+    flex-flow: row; */
+    margin-top: 5%;
+}
+
+.energyGameBuyButtons {
+    display: flex;
+    flex-direction: row;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.energyGameBuyButtons button {
+    background-color: transparent;
+    border: 1px solid black;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin: 0px 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.energyGameBuyButtons button:hover {
+    background-color: rgba(168,216,232,1);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    /* padding: 5px 5px 0px 5px; */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.energyGameUpgradeOne {
+    /* flex: 1 0 200px; */
+    /* height: 6vh; */
+    background: rgb(15,14,15);
+    background: linear-gradient(90deg, rgba(15,14,15,1) 0%, rgba(168,216,232,1) 50%, rgba(15,14,15,1) 100%);
+    border-bottom: 1px solid black;
+    height: 100%;
+    box-shadow: 0px 0px 8px black;
+    transition: all 300ms ease-in-out;
+}
+
+.energyGameUpgradeOne:hover {
+    box-shadow: 0px 0px 30px;
+}
+
+.invisibleButton {
+    background-color: transparent;
+    border-color: transparent;
+    height: 100%;
+    width: 100%;
+}
+
+.energyGameNumOfUpgrades {
+    color: gray;
+    font-size: large;
+}
+
+.energyGameUpgradeTitleText {
+    font-size: small;
+    color: white;
+    font-size: large;
+}
+
+.energyGameUpgradeDescrptText {
+    font-size: small;
+    color: white;
+}
+
+.startColelctingText {
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: x-large;
+    color: white;
+}
+
+/*-----------------x-x------------------*/
+
+.gameStartMainDiv {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    /* background: rgb(68,68,68);
+    background: linear-gradient(90deg, rgba(68,68,68,1) 0%, rgba(205,141,232,1) 50%, rgba(68,68,68,1) 100%); */
+    background: rgb(15,14,15);
+    background: linear-gradient(90deg, rgba(15,14,15,1) 0%, rgba(222,180,121,1) 50%, rgba(15,14,15,1) 100%);
+}
+
+.gameStartButton {
+    background-color: transparent;
+    color: white;
+    border-radius: 6px;
+    width: 60px;
+    height: 30px;
+    box-shadow: 0px 0px 4px black;
+    transition: all 200ms ease-in-out;
+}
+
+.gameStartButton:hover {
+    box-shadow: 0px 0px 20px black;
+    width: 62px;
+    height: 32px;
+}
+
+.gameStartTitleText {
+    color: white;
+    font-size: x-large;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    /* animation: type 4s steps(60, end); */
+}
+
+/* @keyframes type{ 
+    from { width: 0; } 
+}  */
+
+.gameStartText {
+    color: white;
+}

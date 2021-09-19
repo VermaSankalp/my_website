@@ -13,7 +13,7 @@
     
     .oneDayDiv {
         width: 50%;
-        height: 92vh;
+        height: 100vh;
         background-color: cornflowerblue;
         display: inline-block;
         text-align: center;
@@ -29,7 +29,7 @@
     
     .fiveDayDiv {
         width: 50%;
-        height: 92vh;
+        height: 100vh;
         float: right;
         background-color: darkseagreen;
         text-align: center;

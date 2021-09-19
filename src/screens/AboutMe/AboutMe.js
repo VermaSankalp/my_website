@@ -3,8 +3,6 @@ import React from 'react';
 import './AboutMe.css';
 import DropdownCard from '../../components/DropdownCard/DropdownCard';
 
-//Maybe make a "hover here to see what I look like" type ting on this page idk lmao rofl
-
 const AboutMe = () => {
     return(
         <div className="mainAboutDiv">
